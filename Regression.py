@@ -8,10 +8,10 @@ x = x / 20.
 error = 2 * (np.array([random.random() for i in range(len(x))]) - 0.5)
 y = 2 * np.multiply(x, x) + 4 + error
 
-datas = np.stack([x,y], axis=1).astype(np.float64)
+datas = np.stack([x, y], axis=1).astype(np.float64)
 print(datas.shape)
 
-# 우리는 target function이 2차함수임을 알고 있음.
+# 우리는 target function이 2차함수임을 알고 있음. (가정)
 # y = a*x^2 + b에서 a, b를 추정하고자 함.
 a = random.random()
 b = random.random()
